@@ -122,4 +122,4 @@ async def mainloop():
                 await websocket.send(json.dumps(obj))
 
 
-asyncio.get_event_loop().run_until_complete(mainloop())
+asyncio.new_event_loop().run_until_complete(mainloop())
